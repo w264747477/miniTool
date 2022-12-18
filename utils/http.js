@@ -5,7 +5,7 @@ import {
 } from './constant.js'
 
 function request(params, isGetTonken) {
-	console.log('11')
+	
   // 全局变量
   var globalData = getApp().globalData; // 如果正在进行登陆，就将非登陆请求放在队列中等待登陆完毕后进行调用
 
