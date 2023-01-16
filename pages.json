@@ -1,14 +1,15 @@
 {
-	"pages": [
-	{
-	    "path" : "pages/videoPasing/videoPasing",
-	    "style" :                                                                                    
-	    {
-	        "navigationBarTitleText": "",
-	        "enablePullDownRefresh": false
-	    }
-	    
-	},
+	"pages": [{
+			"path": "pages/videoPasing/videoPasing",
+			"style": {
+				"backgroundTextStyle": "dark",
+				"navigationBarBackgroundColor": "#2b82f5",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "去水印"
+			}
+
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -25,15 +26,15 @@
 		{
 			"path": "pages/register/register"
 		},
-		
-		
-		
-		{
-			"path": "pages/logs/logs",
-			"style": {
-				"navigationBarTitleText": "查看启动日志"
-			}
-		},
+
+
+
+		// {
+		// 	"path": "pages/logs/logs",
+		// 	"style": {
+		// 		"navigationBarTitleText": "查看启动日志"
+		// 	}
+		// },
 		{
 			"path": "pages/user/user",
 			"style": {
@@ -182,34 +183,33 @@
 				"navigationBarBackgroundColor": "#fafafa"
 			}
 		}
-		
-	    
-        
-    ],
-	 //分包加载配置，此配置为小程序的分包加载机制。
-		"subPackages": [{
-			"root": "pages/subPack", //子包的根目录
-			"pages": [{ //这里的配置路径和pages里的一样
-					"path": "list", //配置页面路径，这里要注意，因为root已经选中了文件夹，所以我们只要填写文件名就好
-					"style": {
-						"navigationBarTitleText": "",
-						"enablePullDownRefresh": false
-					}
-				},
-				{
-					"path": "tab",
-					"style": {
-						"navigationBarTitleText": "",
-						"enablePullDownRefresh": false
-					}
+
+
+
+	],
+	//分包加载配置，此配置为小程序的分包加载机制。
+	"subPackages": [{
+		"root": "pages/subPack", //子包的根目录
+		"pages": [{ //这里的配置路径和pages里的一样
+				"path": "list", //配置页面路径，这里要注意，因为root已经选中了文件夹，所以我们只要填写文件名就好
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
 				}
-			]
-		}],
+			},
+			{
+				"path": "tab",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			}
+		]
+	}],
 	"tabBar": {
 		"selectedColor": "#3a86b9",
 		"color": "#b8b8b8",
-		"list": [
-			{
+		"list": [{
 				"pagePath": "pages/index/index",
 				"text": "首页",
 				"iconPath": "/static/images/tabbar/homepage.png",
@@ -243,5 +243,5 @@
 		"navigationBarTextStyle": "black"
 	},
 	"subPackages": [],
-	  "lazyCodeLoading": "requiredComponents"
+	"lazyCodeLoading": "requiredComponents"
 }

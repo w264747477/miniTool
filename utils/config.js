@@ -17,7 +17,8 @@
 
 var mpAppId = 'wx42bbe857570c5b40'
 // 临时
-var domain = "http://43.142.9.84:8000"; //统一接口域名，测试环境
+// var domain = "http://43.142.9.84:8000"; //统一接口域名，测试环境
+var domain = "http://127.0.0.1:8000"; //统一接口域名，测试环境
 var wsDomain = "ws://43.142.9.84:8000/"; //统一接口域名，测试环境
 
 var picDomain = "https://img.mall4j.com/"; //图片域名
